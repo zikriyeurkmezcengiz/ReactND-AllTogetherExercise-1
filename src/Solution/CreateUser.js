@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-class AddUser extends Component {
+class CreateUser extends Component {
   state = {
     user: {
       firstName: "",
@@ -98,4 +98,4 @@ AddUser.propTypes = {
   users: PropTypes.array.isRequired,
 };
 
-export default AddUser;
+export default CreateUser;

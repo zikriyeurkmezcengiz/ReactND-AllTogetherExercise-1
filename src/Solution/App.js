@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import logo from "../logo.svg";
 import "../App.css";
-import AddUser from "./AddUser";
+import AddUser from "./CreateUser";
 import UserList from "./UserList";
+import CreateUser from "./CreateUser";
 
 /*
 This exercise will help you put together and practice all of the concepts you've
@@ -37,7 +38,13 @@ class App extends Component {
           <div>
             <h2 className="App-subTitle">Cretate User</h2>
           </div>
-          <AddUser users={this.state.users} onAddUser={this.createContact} />
+          <CreateUser users={this.state.users} onAddUser={this.createContact} />
+        </div>
+        <div>
+          <div>
+            <h2 className="App-subTitle">User List</h2>
+          </div>
+          <CreateUser users={this.state.users} onAddUser={this.createContact} />
         </div>
         {/* <div>
           <UserList userList={this.state.userList} />
