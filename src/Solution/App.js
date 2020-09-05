@@ -35,16 +35,10 @@ class App extends Component {
           </header>
         </div>
         <div>
-          <div>
-            <h2 className="App-subTitle">Cretate User</h2>
-          </div>
           <CreateUser users={this.state.users} onAddUser={this.createContact} />
         </div>
         <div>
-          <div>
-            <h2 className="App-subTitle">User List</h2>
-          </div>
-          <CreateUser users={this.state.users} onAddUser={this.createContact} />
+          <UserList users={this.state.users} />
         </div>
         {/* <div>
           <UserList userList={this.state.userList} />

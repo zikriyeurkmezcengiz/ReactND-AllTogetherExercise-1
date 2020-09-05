@@ -93,7 +93,7 @@ class CreateUser extends Component {
   }
 }
 
-AddUser.propTypes = {
+CreateUser.propTypes = {
   onAddUser: PropTypes.func.isRequired,
   users: PropTypes.array.isRequired,
 };
